@@ -8,13 +8,9 @@ public class Equipe {
   private int derrotas;
   private int empates;
 
-  public Equipe(String nome, int divisao, int pontuacao, int vitorias, int derrotas, int empates) {
+  public Equipe(String nome, int divisao) {
     this.nome = nome;
     this.divisao = divisao;
-    this.pontuacao = pontuacao;
-    this.vitorias = vitorias;
-    this.derrotas = derrotas;
-    this.empates = empates;
   }
 
   int ganharJogo() {
@@ -55,20 +51,16 @@ public class Equipe {
     return vitorias;
   }
 
-  public void setPontuacao(int pontuacao) {
-    this.pontuacao = pontuacao;
+  public String setNome() {
+    return nome;
   }
 
-  public void setVitorias(int vitorias) {
-    this.vitorias = vitorias;
+  public int setDivisao() {
+    return divisao;
   }
 
-  public void setDerrotas(int derrotas) {
-    this.derrotas = derrotas;
-  }
-
-  public void setEmpates(int empates) {
-    this.empates = empates;
+  public void apresentar() {
+    System.out.println(this);
   }
 
   @Override
